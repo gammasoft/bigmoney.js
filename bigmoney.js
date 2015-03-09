@@ -40,6 +40,13 @@
     /**
      * wrap Big.js methods
      */
+    Money.zero = function() {
+        return new Money(0);
+    }
+
+    Money.one = function() {
+        return new Money(1);
+    }
 
     Money.prototype.abs = function () {
         return Money(this.val.abs.apply(this.val, arguments), this.currency, this.options);
@@ -184,7 +191,7 @@
      */
 
     Money.prototype.valueOf = function () {
-        return parseFloat(this.val.toFixed(2));
+        return parseFloat(this.val.round(2).valueOf());
     }
 
     /**
@@ -193,7 +200,7 @@
      */
 
     Money.prototype.toString = function () {
-        return this.val.toFixed(2);
+        return this.val.round(2).valueOf();
     }
 
     /**

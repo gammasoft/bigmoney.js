@@ -1,6 +1,6 @@
 {
   "name": "gammamoney",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library for handling the money values. This is a fork from bigmoney.js Based on big.js library for arbitrary-precision decimal arithmetic. Support multiple currencies.",
   "main": "bigmoney.js",
   "directories": {

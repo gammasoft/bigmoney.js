@@ -68,3 +68,6 @@ new Money(100).allocate([1, 2, 1]).forEach(function(payment) {
   //three payments, 25% then 50% then 25%
     console.log(payment.format());
 });
+
+console.log(Money.zero().plus(1).format());
+console.log(Money.one().plus(1).plus(1).format());
